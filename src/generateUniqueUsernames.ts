@@ -4,15 +4,15 @@ import {
     marvelNouns,
     cartoonNouns,
     animeNouns,
-    nfsAdjectives,
+    nfswAdjectives,
 } from "./constant"
 
-type AdjectiveGenre = "quirky" | "nfs"
+type AdjectiveGenre = "quirky" | "nfsw"
 type NounGenre = "quirky" | "marvel" | "cartoons" | "anime"
 
 const genreAdjectives: Record<AdjectiveGenre, string[]> = {
     quirky: quirkyAdjectives,
-    nfs: nfsAdjectives,
+    nfsw: nfswAdjectives,
 }
 
 const genreNouns: Record<NounGenre, string[]> = {

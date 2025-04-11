@@ -9,14 +9,18 @@
         "fast",
         "Genre-Based"
     ],
+    "homepage": "https://github.com/saurabh-lohiya/unique-usernames#readme",
+    "bugs": {
+        "url": "https://github.com/saurabh-lohiya/unique-usernames/issues"
+    },
     "repository": {
         "type": "git",
-        "url": "https://github.com/saurabh-lohiya/unique-usernames"
+        "url": "git+https://github.com/saurabh-lohiya/unique-usernames.git"
     },
     "license": "MIT",
     "author": "debug_duckling",
     "type": "commonjs",
-    "main": "",
+    "main": "src/generateUniqueUsernames.ts",
     "scripts": {
         "test": ""
     }

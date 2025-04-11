@@ -1,4 +1,4 @@
-export const nfsAdjectives = [
+export const nfswAdjectives = [
     "ardent",
     "burning",
     "consuming",
