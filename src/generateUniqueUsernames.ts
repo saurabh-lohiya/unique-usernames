@@ -35,14 +35,21 @@ export function generateUniqueUsername({
     serial?: number
     separator?: boolean
     shouldCapitalize?: boolean
-    isUsernameTaken?: (username: string) => boolean // Made optional
+    isUsernameTaken?: (username: string) => boolean
 } = {}) {
     const adjectives = genreAdjectives[adjectiveGenre]
     const nouns = genreNouns[nounGenre]
 
+    const maxAttempts = 1000 // Limit attempts to avoid infinite loops
+    let attempt = 0
     let username: string
+
     do {
-        const randomNumber = serial ?? Math.floor(Math.random() * 1000)
+        if (attempt >= maxAttempts) {
+            throw new Error("Unable to generate a unique username after multiple attempts.")
+        }
+
+        const randomNumber = serial ?? Math.floor(Math.random() * 1_000_000) // Support up to 1M users
         const randomAdjective =
             adjectives[Math.floor(Math.random() * adjectives.length)]
         const randomNoun = nouns[Math.floor(Math.random() * nouns.length)]
@@ -57,6 +64,7 @@ export function generateUniqueUsername({
         }
 
         username = `${username}${randomNumber}`
+        attempt++
     } while (isUsernameTaken(username))
 
     return username
