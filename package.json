@@ -1,6 +1,6 @@
 {
     "name": "unique-usernames",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "unique-usernames is a lightweight and customizable npm package designed to generate unique and creative usernames for apps, organizations, and platforms. Whether you're building a social media app, a gaming platform, or any service that requires unique user identifiers, this package provides a flexible solution tailored to your needs.",
     "keywords": [
         "unique-usernames",
@@ -35,8 +35,16 @@
     "license": "MIT",
     "author": "debug_duckling",
     "type": "commonjs",
-    "main": "src/generateUniqueUsernames.ts",
+    "main": "dist/generateUniqueUsernames.js",
+    "module": "dist/generateUniqueUsernames.mjs",
+    "types": "dist/generateUniqueUsernames.d.ts",
     "scripts": {
-        "test": ""
-    }
+        "test": "",
+        "build": "tsc"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ]
 }
