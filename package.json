@@ -1,13 +1,28 @@
 {
     "name": "unique-usernames",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "unique-usernames is a lightweight and customizable npm package designed to generate unique and creative usernames for apps, organizations, and platforms. Whether you're building a social media app, a gaming platform, or any service that requires unique user identifiers, this package provides a flexible solution tailored to your needs.",
     "keywords": [
         "unique-usernames",
-        "customizable-formats",
+        "username-generator",
+        "customizable-usernames",
+        "random-usernames",
+        "creative-usernames",
+        "quirky-usernames",
+        "anime-usernames",
+        "marvel-usernames",
+        "cartoon-usernames",
+        "funny-usernames",
         "lightweight",
         "fast",
-        "Genre-Based"
+        "genre-based-usernames",
+        "username-creation",
+        "username-tool",
+        "npm-package",
+        "social-media-usernames",
+        "gaming-usernames",
+        "unique-identifier",
+        "username-customization"
     ],
     "homepage": "https://github.com/saurabh-lohiya/unique-usernames#readme",
     "bugs": {
