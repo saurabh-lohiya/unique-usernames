@@ -4,7 +4,7 @@ import {
     marvelNouns,
     cartoonNouns,
     animeNouns,
-    nfswAdjectives,
+    nfswAdjectives
 } from "./constant"
 
 type AdjectiveGenre = "quirky" | "nfsw"
