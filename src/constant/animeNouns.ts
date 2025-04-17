@@ -1,4 +1,4 @@
-export const animeNouns = [
+export const animeNouns: string[] = [
     "naruto",
     "goku",
     "luffy",
